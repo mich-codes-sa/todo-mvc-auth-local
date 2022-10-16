@@ -1,10 +1,117 @@
-h1{
-    color: red;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+
+body {
+    display: grid;
+    place-items: center;
+    /* height: fit-content; */
+    /* width: fit-content; */
+    /* border-radius: 2px; */
+    /* box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3); */
+    width: 100vw;
+    height: 100vh;
+    background: #C7D6E1;
+    background: linear-gradient(to top right, #FDA231 0%, #FDCA31 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FDA231", endColorstr="#FDCA31", GradientType=1);
+    color: #497081;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
 }
-.completed{
+
+.frame {
+    display: grid;
+    place-items: center;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    /* width: 400px;
+    margin-top: -200px;
+    margin-left: -200px; */
+}
+
+.list {
+    /* position: absolute; */
+    width: fit-content;
+    height: fit-content;
+    /* top: 50px; */
+    /* left: 50px; */
+    background: #FFFFFF;
+    box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.list .head {
+    padding: 20px 0;
+    margin: 0 30px;
+    border-bottom: 1px solid #D4DCE0;
+}
+
+.list .title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.list .subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.list ul {
+    list-style: none;
+    padding: 4px 0;
+    margin: 0 30px;
+}
+
+.list ul li {
+    position: relative;
+    display: block;
+    margin: 24px 0;
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 30px 30px;
+}
+
+.list ul .text {
+    float: left;
+    font-size: 13px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.completed {
     text-decoration: line-through;
-    color: gray;
+    color: #C8D4D9;
 }
-.not{
-    text-decoration: underline;
+
+.del {
+    cursor: pointer;
+}
+
+.button {
+    border-radius: 100vmax;
+    border: none;
+    padding: 10px;
+    color: #497081;
+    background: none;
+    border: 1px solid #497081;
+}
+
+.logout {
+    background: #ffffff;
+    text-decoration: none;
 }
